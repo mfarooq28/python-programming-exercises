@@ -1,0 +1,31 @@
+import re 
+
+text = "Chennai is a beautiful city. It’s the capital of the state of Tamil Nadu. Chennai has an area close to 430 kilometer squares. Well chennai is not as large as mumbai which has an area of 603.4 kilometer squares. By road, Chennai is about 1500 kilometers away from Mumbai. Whereas, it is about 2200 kilometers away from Delhi, the capital of India."
+
+#cities_record = 'Chennai'
+#re.findall(cities_record, text, flags=re.IGNORECASE)
+
+cities_record = 'Chennai|Mumbai'
+re.findall(cities_record, text, flags=re.IGNORECASE)
+
+
+
+"""
+text = "\
+Banana    1.051    48.25\
+Apple     1.024   180.54\
+Carrot    0.524    47.20\
+Radish    0.251    27.14\
+Tomato    0.508    41.05"
+"""
+
+words_pattern = '[a-z]+'
+
+#re.findall(words_pattern, text, flags=re.IGNORECASE)
+
+
+
+words_pattern = '[a-zA-Z]+'
+"""
+comment = "This is an great article @Bharath. You have explained the complex topic in a very simplistic manner. @Yashwant, you might find this article to be useful."
+"""
